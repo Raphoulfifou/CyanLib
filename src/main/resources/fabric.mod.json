@@ -1,38 +1,44 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "cyanlib",
   "version": "${version}",
-
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "CyanLib",
+  "description": "This is a library for small utilities",
   "authors": [
-    "Me!"
+    "Raphoulfifou"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://modrinth.com/user/lRyDhyWM",
+    "sources": "https://github.com/Raphoulfifou/CyanLib",
+    "issues": "https://github.com/Raphoulfifou/CyanLib/issues"
   },
-
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
-
+  "icon": "assets/cyanlib/icon.png",
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "net.fabricmc.example.ExampleMod"
+    "server": [
+      "fr.raphoulfifou.cyanlib.CyanLibServerCore"
+    ],
+    "client": [
+      "fr.raphoulfifou.cyanlib.CyanLibClientCore"
     ]
   },
-  "mixins": [
-    "modid.mixins.json"
-  ],
-
   "depends": {
     "fabricloader": ">=0.13.3",
     "fabric": "*",
     "minecraft": "1.18.x",
     "java": ">=17"
   },
-  "suggests": {
-    "another-mod": "*"
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/W4secTP",
+        "midnightlib.modrinth": "https://modrinth.com/user/Raphoulfifou",
+        "midnightlib.wiki": "https://github.com/Raphoulfifou/CyanLib/wiki"
+      },
+      "badges": [
+        "library"
+      ]
+    }
   }
 }
