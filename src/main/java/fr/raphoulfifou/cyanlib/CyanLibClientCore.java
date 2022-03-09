@@ -1,27 +1,22 @@
 package fr.raphoulfifou.cyanlib;
 
-import net.fabricmc.api.DedicatedServerModInitializer;
+import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 /**
- * @author Raphoulfifou
- * @since 1.0.0
+ * @since 0.0.1
  */
-@Environment(EnvType.SERVER)
-public class CyanLibClientCore implements DedicatedServerModInitializer
+@Environment(EnvType.CLIENT)
+public class CyanLibClientCore implements ClientModInitializer
 {
 
-    public static final Logger LOGGER = LogManager.getLogger(CyanLibServerCore.MODID);
-    public static final String SERVERMODNAME = "[CyanLibClient]";
+    public static final String CLIENTMODNAME = "[CyanLibClient]";
 
     @Override
-    // Initialize the differents parts of the mod when lauched on client
-    public void onInitializeServer()
+    public void onInitializeClient()
     {
-        CyanLibClientCore.LOGGER.info("{} Initializing", SERVERMODNAME);
+        CyanLibServerCore.LOGGER.info("{} Initializing...", CLIENTMODNAME);
     }
 
 }

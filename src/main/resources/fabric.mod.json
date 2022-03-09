@@ -8,7 +8,7 @@
     "Raphoulfifou"
   ],
   "contact": {
-    "homepage": "https://modrinth.com/user/lRyDhyWM",
+    "homepage": "https://modrinth.com/user/Raphoulfifou",
     "sources": "https://github.com/Raphoulfifou/CyanLib",
     "issues": "https://github.com/Raphoulfifou/CyanLib/issues"
   },
@@ -25,7 +25,7 @@
   },
   "depends": {
     "fabricloader": ">=0.13.3",
-    "fabric": "*",
+    "fabric-resource-loader-v0": "*",
     "minecraft": "1.18.x",
     "java": ">=17"
   },

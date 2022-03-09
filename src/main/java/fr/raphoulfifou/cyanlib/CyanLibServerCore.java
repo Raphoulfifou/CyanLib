@@ -7,8 +7,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
- * @author Raphoulfifou
- * @since 1.0.0
+ * @since 0.0.1
  */
 @Environment(EnvType.SERVER)
 public class CyanLibServerCore implements DedicatedServerModInitializer
@@ -22,7 +21,7 @@ public class CyanLibServerCore implements DedicatedServerModInitializer
     // Initialize the differents parts of the mod when lauched on server
     public void onInitializeServer()
     {
-        CyanLibServerCore.LOGGER.info("{} Initializing", SERVERMODNAME);
+        LOGGER.info("{} Initializing...", SERVERMODNAME);
     }
 
 }
