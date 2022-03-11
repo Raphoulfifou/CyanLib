@@ -14,5 +14,5 @@
 #### ✅ List of features :
 
     - ChatUtils :
-        - sendPlayerMessage -> send a messagee to the player, but with the ability to send messages using translation files,
-                               or just send a message in one language (which will not be translated)
+        - sendPlayerMessage -> send a messagee to the player, but with the ability to send them using translation files,
+                               or just send the message in one language (which will not be translated)
