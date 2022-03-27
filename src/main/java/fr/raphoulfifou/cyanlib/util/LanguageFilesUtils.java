@@ -15,6 +15,14 @@ import static fr.raphoulfifou.cyanlib.util.ChatUtil.sendPlayerMessage;
 public class LanguageFilesUtils
 {
 
+    /**
+     * Create a lang file (ex: en.txt), and a folder with the name 'folderName' if it doesn't exists (this folder is created/located in the config directory of the MC server)
+     *
+     * @param player         the player
+     * @param folderName     the name of the folder, most likely the modid
+     * @param langName       the name of the language (ex: en, fr, ...)
+     * @param useOneLanguage if the use of one language is used (here it is used when a message is send to the player
+     */
     public static void setupLangFile(ServerPlayerEntity player, String folderName, String langName, boolean useOneLanguage)
     {
         if (FabricLoader.getInstance().getEnvironmentType() == EnvType.SERVER)
