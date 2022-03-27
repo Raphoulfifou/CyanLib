@@ -27,7 +27,7 @@ public class LanguageFilesUtils
                     sendPlayerMessage(player,
                             "Folder created : config/" + folderName + "/",
                             folderName,
-                            "cyan.message.folderCreated",
+                            "cyanlib.message.folderCreated",
                             false,
                             useOneLanguage);
                 } catch (IOException e)
@@ -41,9 +41,9 @@ public class LanguageFilesUtils
                 if (langFile.createNewFile())
                 {
                     sendPlayerMessage(player,
-                            "File created: " + langFile.getName(),
+                            "File created : " + langFile.getName(),
                             langFile.getName(),
-                            "cyan.message.fileCreated",
+                            "cyanlib.message.fileCreated",
                             false,
                             useOneLanguage);
                 } else
@@ -52,16 +52,16 @@ public class LanguageFilesUtils
                     sendPlayerMessage(player,
                             "File already exists.",
                             null,
-                            "cyan.message.fileAlreadyExists",
+                            "cyanlib.message.fileAlreadyExists",
                             false,
                             useOneLanguage);
                 }
             } catch (IOException e)
             {
                 sendPlayerMessage(player,
-                        "Error",
+                        "Could not create the language file",
                         null,
-                        "cyan.message.error",
+                        "cyanlib.message.error.createFile",
                         false,
                         useOneLanguage);
                 e.printStackTrace();
@@ -71,7 +71,7 @@ public class LanguageFilesUtils
             sendPlayerMessage(player,
                     "This functionnality only works if you are on a server",
                     null,
-                    "cyan.message.notOnServer",
+                    "cyanlib.message.error.notOnServer",
                     false,
                     useOneLanguage);
         }
