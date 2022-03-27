@@ -16,7 +16,8 @@ public class LanguageFilesUtils
 {
 
     /**
-     * Create a lang file (ex: en.txt), and a folder with the name 'folderName' if it doesn't exists (this folder is created/located in the config directory of the MC server)
+     * Create a lang file (ex: en.txt) with the {@code langName},
+     * and a folder with the name {@code folderName} if it doesn't exists (this folder is created/located in the config directory of the MC server)
      *
      * @param player         the player
      * @param folderName     the name of the folder, most likely the modid
