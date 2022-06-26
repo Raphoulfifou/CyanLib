@@ -16,7 +16,7 @@ public class CyanLibClientCore implements ClientModInitializer
     @Override
     public void onInitializeClient()
     {
-        CyanLibServerCore.LOGGER.info("{} Initializing...", CLIENTMODNAME);
+        CyanLibServerCore.LOGGER.info("{} Successfuly initialized", CLIENTMODNAME);
     }
 
 }

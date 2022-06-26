@@ -3,7 +3,7 @@ package fr.raphoulfifou.cyanlib.util;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.text.TranslatableText;
+import net.minecraft.text.Text;
 
 import java.io.File;
 import java.io.IOException;
@@ -46,7 +46,7 @@ public class LanguageFilesUtils
             }
             try
             {
-                File langFile = new File(String.valueOf(FabricLoader.getInstance().getConfigDir().resolve(folderName + "\\" + langName + ".txt")));
+                File langFile = new File(String.valueOf(FabricLoader.getInstance().getConfigDir().resolve(folderName + "\\" + langName + ".properties")));
                 if (langFile.createNewFile())
                 {
                     sendPlayerMessage(player,
@@ -57,7 +57,7 @@ public class LanguageFilesUtils
                             useOneLanguage);
                 } else
                 {
-                    player.sendMessage(new TranslatableText("File already exists."), false);
+                    player.sendMessage(Text.translatable("File already exists."), false);
                     sendPlayerMessage(player,
                             "File already exists.",
                             null,

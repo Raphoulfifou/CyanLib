@@ -21,7 +21,7 @@ public class CyanLibServerCore implements DedicatedServerModInitializer
     // Initialize the differents parts of the mod when lauched on server
     public void onInitializeServer()
     {
-        LOGGER.info("{} Initializing...", SERVERMODNAME);
+        LOGGER.info("{} Successfuly initialized", SERVERMODNAME);
     }
 
 }

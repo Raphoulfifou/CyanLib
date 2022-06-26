@@ -3,7 +3,7 @@ package fr.raphoulfifou.cyanlib.util;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.text.TranslatableText;
+import net.minecraft.text.Text;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -18,14 +18,14 @@ public class ChatUtil
         {
             if (use_one_language)
             {
-                player.sendMessage(new TranslatableText(msg, args), actionbar);
+                player.sendMessage(Text.translatable(msg, args), actionbar);
             } else
             {
-                player.sendMessage(new TranslatableText(trad_path, args), actionbar);
+                player.sendMessage(Text.translatable((trad_path.formatted(args)), actionbar));
             }
         } else
         {
-            player.sendMessage(new TranslatableText(trad_path, args), actionbar);
+            player.sendMessage(Text.translatable((trad_path.formatted(args)), actionbar));
         }
     }
 
