@@ -3,8 +3,8 @@ package fr.raphoulfifou.cyanlib;
 import net.fabricmc.api.DedicatedServerModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @since 0.0.1
@@ -14,7 +14,7 @@ public class CyanLibServerCore implements DedicatedServerModInitializer
 {
 
     public static final String MODID = "cyanlib";
-    public static final Logger LOGGER = LogManager.getLogger(MODID);
+    public static final Logger LOGGER = LoggerFactory.getLogger(MODID);
     public static final String SERVERMODNAME = "[CyanLibServer]";
 
     @Override
