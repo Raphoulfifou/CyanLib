@@ -18,7 +18,7 @@ public class ChatUtil
         {
             if (use_one_language)
             {
-                player.sendMessage(Text.translatable(msg, args), actionbar);
+                player.sendMessage(Text.translatable(msg.formatted(args)), actionbar);
             } else
             {
                 player.sendMessage(Text.translatable((trad_path.formatted(args)), actionbar));
