@@ -16,11 +16,8 @@
   "icon": "assets/cyanlib/icon.png",
   "environment": "*",
   "entrypoints": {
-    "server": [
-      "fr.raphoulfifou.cyanlib.CyanLibServerCore"
-    ],
-    "client": [
-      "fr.raphoulfifou.cyanlib.CyanLibClientCore"
+    "*": [
+      "fr.raphoulfifou.cyanlib.CyanLibCore"
     ]
   },
   "depends": {
